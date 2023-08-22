@@ -1,12 +1,12 @@
-r, g, b = input().split()#3가지 색을 입력받음
+a,d,n=input().split()
 
-r = int(r) #형변환을 시켜줌
-g = int(g)
-b = int(b)
+a=int(a)
+d=int(d)
+n=int(n)
 
-for i in range(0, r) :
-    for j in range(0, g) :
-        for k in range(0, b) :
-            print(i, j, k)
+s=a
 
-print(r*g*b)
+for i in range(0, n-1):
+    s+=d
+
+print(s)
