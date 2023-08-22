@@ -1,12 +1,6 @@
-a,d,n=input().split()
-
-a=int(a)
-d=int(d)
-n=int(n)
-
+a,d,n=map(int,input().split())
 s=a
-
 for i in range(0, n-1):
-    s+=d
+    s*=d
 
 print(s)
