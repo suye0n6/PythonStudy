@@ -1,6 +1,12 @@
-a,d,n=map(int,input().split())
-s=a
-for i in range(0, n-1):
-    s*=d
+a, m, d, n = input().split()
 
-print(s)
+a = int(a)
+m = int(m)
+d = int(d)
+n = int(n)
+
+for i in range(1, n) :
+    a = a*m+d
+
+print(a)
+
