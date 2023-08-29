@@ -1,8 +1,13 @@
-n = int(input()) 
-a = input().split() 
+n = int(input())
+k = input().split()
 
-for i in range(n): 
-    a[i] = int(a[i]) 
+for i in range(n):
+    k[i] = int(k[i])
 
-for i in range(n-1, -1, -1): 
-    print(a[i], end=' ')
+d = k[0]
+
+for i in range(0, n):
+    if d > k[i]:
+        d = k[i]
+        
+print(d)
